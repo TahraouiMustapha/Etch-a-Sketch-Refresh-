@@ -8,8 +8,18 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.new-grid-btn {
+    padding: 16px 32px;
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+    background-color: darkcyan;
+    cursor: pointer;
 }
 
 .container {
@@ -23,8 +33,6 @@ body {
 
 .square {
     border: 1px solid #000;
-    width: calc(100% / 16);
-    height: calc(100% / 16);
 }
 
 .colored {
