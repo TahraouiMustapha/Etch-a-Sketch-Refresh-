@@ -30,6 +30,11 @@ function makeGrid(nmbSquares) {
     squares.forEach((square) => {
         square.addEventListener('mouseenter', () => {
             square.classList.add('colored'); 
+            let currentOpacity = +square.style.opacity;
+            if(currentOpacity < 1) {
+                currentOpacity += 0.1 ;
+                square.style.opacity = currentOpacity;
+            }
         })
     })
 }
